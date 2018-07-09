@@ -1,11 +1,12 @@
-package main
+package snowflake_test
 
 import (
 	"testing"
+	"github.com/mulansoft/snowflake"
 )
 
 func TestNewNode(t *testing.T) {
-	node, err := NewNode(1)
+	node, err := snowflake.NewNode(1)
 	if err != nil {
 		t.Fatal(err)
 	}
